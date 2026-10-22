@@ -1,0 +1,246 @@
+.features {
+    padding: 120px 24px;
+    background: var(--chill-bg);
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Features Grid - Horizontal Cards */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 28px;
+    background: var(--chill-bg-card);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--chill-border);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateX(8px);
+    border-color: var(--chill-border-hover);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    flex-shrink: 0;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.feature-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.feature-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+}
+
+.feature-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--chill-text-secondary);
+}
+
+.feature-arrow {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--chill-bg-glass);
+    border: 1px solid var(--chill-border);
+    border-radius: 10px;
+    color: var(--chill-text-muted);
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s;
+}
+
+.feature-card:hover .feature-arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.feature-arrow svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Code Showcase */
+.code-showcase {
+    background: var(--chill-bg-secondary);
+    border: 1px solid var(--chill-border);
+    border-radius: 28px;
+    padding: 48px;
+    text-align: center;
+}
+
+.showcase-header {
+    margin-bottom: 32px;
+}
+
+.showcase-title {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.showcase-subtitle {
+    font-size: 16px;
+    color: var(--chill-text-secondary);
+}
+
+.showcase-cards {
+    margin-bottom: 32px;
+}
+
+.showcase-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--chill-bg);
+    border: 1px solid var(--chill-border);
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--chill-bg-glass);
+    border-bottom: 1px solid var(--chill-border);
+}
+
+.card-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.card-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.card-dots span:first-child {
+    background: #ef4444;
+}
+
+.card-dots span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.card-dots span:nth-child(3) {
+    background: #22c55e;
+}
+
+.card-lang {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.card-code {
+    padding: 24px;
+    margin: 0;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-x: auto;
+}
+
+.card-code code {
+    color: var(--chill-text);
+}
+
+/* Tech Badges */
+.showcase-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: var(--chill-bg-glass);
+    border: 1px solid var(--chill-border);
+    border-radius: 100px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--chill-text-secondary);
+    transition: all 0.2s;
+}
+
+.tech-badge:hover {
+    border-color: var(--chill-border-hover);
+    color: var(--chill-text);
+}
+
+.tech-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-arrow {
+        display: none;
+    }
+
+    .code-showcase {
+        padding: 32px 20px;
+    }
+
+    .showcase-badges {
+        gap: 8px;
+    }
+
+    .tech-badge {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+}

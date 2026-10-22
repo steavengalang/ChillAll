@@ -15,7 +15,7 @@
 Plain JavaScript. No framework, no dependencies, no CSS file to import.<br>
 The same code runs in static HTML, React, Vue, Svelte and Next.js.
 
-[Quick start](#quick-start) · [Components](#components) · [Theming](#theming-and-dark-mode) · [Frameworks](#use-it-with-your-framework) · [Development](#development) · [Catalog](chillall/COMPONENTS.md)
+[Quick start](#quick-start) · [Components](#components) · [Theming](#theming-and-dark-mode) · [Frameworks](#use-it-with-your-framework) · [Docs site](Chillcode_Tech/README.md) · [Development](#development) · [Catalog](chillall/COMPONENTS.md)
 
 </div>
 
@@ -41,7 +41,7 @@ The same code runs in static HTML, React, Vue, Svelte and Next.js.
 npm install chillall
 ```
 
-> **Note:** `chillall` is built from this repository. Until it is on the npm registry, build it from source (see [Development](#development)) and use `chillall/dist/`, or publish it from the `chillall/` folder with `npm publish`.
+> **Only need one component?** Every component is also published on its own (`npm install chillslider`, `chilltable`, `chillcalendar`, ...). `chillall` contains all of them and is tree-shakeable, so it is the recommended install. (`ChillFetch` ships in `chillall` only: the name `chillfetch` is too similar to an existing npm package.)
 
 ### Use it
 
@@ -205,6 +205,8 @@ User-supplied strings in titles, labels, table cells, chart labels and icons are
 chillall/              the single-file package (npm: chillall) and its generated catalog
 chill<name>/           one folder per component: src/chill<name>.js (+ package.json)
 src/, dist/            ChillAlert, the original package (npm: chillalert), with hand-written typings
+Chillcode_Tech/        the documentation website (Vite + React): live, editable examples for all 88 components,
+                       guides and recipes. Deploy it on Vercel with Root Directory = Chillcode_Tech
 tools/                 build, tests, docs generator, tree-shaking check, demo server
   build.js               bundles everything into chillall/dist (ESM, CJS, IIFE, min, d.ts)
   manifest.js            category map used by the bundle and the catalog

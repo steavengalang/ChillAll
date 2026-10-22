@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChillAll — 88 zero-dependency UI components in one install</title>
+    <meta name="description" content="ChillAll is a framework-agnostic UI library: alerts, modals, tables, charts, forms, pickers, navigation, overlays and utilities. Zero dependencies, tree-shakeable, accessible, dark-mode ready. Works with React, Vue, Next.js and plain HTML." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ChillAll — 88 zero-dependency UI components in one install" />
+    <meta property="og:description" content="Live, editable docs for 88 accessible, dark-mode-ready components. One install, zero dependencies, ~4 KB for a single component." />
+    <meta name="twitter:card" content="summary" />
+    <script>
+      // apply the saved theme before first paint (no flash). Same contract as ChillTheme: <html data-theme> + .light/.dark class
+      (function () {
+        try {
+          var t = localStorage.getItem('chill-theme') || localStorage.getItem('chillcode-theme');
+          if (t !== 'light' && t !== 'dark') t = 'dark';
+          var h = document.documentElement;
+          h.setAttribute('data-theme', t);
+          h.classList.remove('light', 'dark');
+          h.classList.add(t);
+          h.style.colorScheme = t;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>ChillAll's documentation needs JavaScript to run its live examples.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

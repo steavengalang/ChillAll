@@ -1,0 +1,75 @@
+/*
+ * Base look for PLAIN HTML elements created inside live previews (docs examples and landing showcase).
+ * Examples often add helper buttons/inputs with document.createElement(...) and no classes; without this they render
+ * as browser-default grey boxes. Anything whose class contains "chill" (every ChillAll component) is left untouched.
+ */
+:is(.dx-root, .sc-stage) {
+  --pv-border: var(--chill-border-hover);
+  --pv-surface: var(--chill-bg);
+  --pv-hover: color-mix(in srgb, var(--chill-primary) 12%, var(--chill-bg));
+  --pv-ring: 0 0 0 3px rgba(59, 130, 246, .35);
+}
+
+/* ---- buttons ---- */
+:is(.dx-root, .sc-stage) button:not([class*="chill"]):not([class^="dx-"]):not([class*=" dx-"]) {
+  appearance: none;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  font-family: inherit; font-size: 13.5px; font-weight: 600; line-height: 1.2; letter-spacing: -.005em;
+  padding: 8px 15px; min-height: 34px;
+  border-radius: 10px; border: 1px solid var(--pv-border);
+  background: var(--pv-surface); color: var(--chill-text);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+  cursor: pointer; user-select: none;
+  transition: background-color .15s, border-color .15s, box-shadow .15s, transform .06s;
+}
+:is(.dx-root, .sc-stage) button:not([class*="chill"]):not([class^="dx-"]):not([class*=" dx-"]):hover:not(:disabled) {
+  background: var(--pv-hover); border-color: var(--chill-primary);
+}
+:is(.dx-root, .sc-stage) button:not([class*="chill"]):not([class^="dx-"]):not([class*=" dx-"]):active:not(:disabled) {
+  transform: translateY(1px); box-shadow: none;
+}
+:is(.dx-root, .sc-stage) button:not([class*="chill"]):not([class^="dx-"]):not([class*=" dx-"]):focus-visible {
+  outline: none; box-shadow: var(--pv-ring);
+}
+:is(.dx-root, .sc-stage) button:not([class*="chill"]):not([class^="dx-"]):not([class*=" dx-"]):disabled {
+  opacity: .5; cursor: not-allowed; box-shadow: none;
+}
+
+/* ---- text fields ---- */
+:is(.dx-root, .sc-stage) :is(
+  input:not([type]), input[type="text"], input[type="email"], input[type="search"], input[type="number"],
+  input[type="password"], input[type="url"], input[type="tel"], input[type="date"], input[type="time"], select, textarea
+):not([class*="chill"]) {
+  font-family: inherit; font-size: 14px; line-height: 1.4;
+  padding: 8px 12px; min-height: 36px; max-width: 100%;
+  border-radius: 10px; border: 1px solid var(--pv-border);
+  background: var(--pv-surface); color: var(--chill-text);
+  transition: border-color .15s, box-shadow .15s;
+}
+:is(.dx-root, .sc-stage) :is(input, select, textarea):not([class*="chill"]):focus {
+  outline: none; border-color: var(--chill-primary); box-shadow: var(--pv-ring);
+}
+:is(.dx-root, .sc-stage) :is(input, textarea):not([class*="chill"])::placeholder { color: var(--chill-text-muted); }
+:is(.dx-root, .sc-stage) :is(input[type="checkbox"], input[type="radio"], input[type="range"]):not([class*="chill"]) {
+  accent-color: var(--chill-primary);
+}
+
+/* ---- text ---- */
+:is(.dx-root, .sc-stage) a:not([class*="chill"]) {
+  color: var(--chill-accent-light); text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+[data-theme="light"] :is(.dx-root, .sc-stage) a:not([class*="chill"]) { color: var(--chill-accent-dark); }
+:is(.dx-root, .sc-stage) :is(code, kbd):not([class*="chill"]) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em;
+  padding: 1px 6px; border-radius: 6px; border: 1px solid var(--chill-border); background: var(--chill-bg-glass);
+}
+:is(.dx-root, .sc-stage) :is(h1, h2, h3, h4, h5):not([class*="chill"]) { margin: 0 0 6px; line-height: 1.25; letter-spacing: -.01em; }
+:is(.dx-root, .sc-stage) p:not([class*="chill"]) { line-height: 1.55; }
+:is(.dx-root, .sc-stage) hr:not([class*="chill"]) { border: 0; border-top: 1px solid var(--chill-border); margin: 12px 0; }
+:is(.dx-root, .sc-stage) :is(ul, ol):not([class*="chill"]) { padding-left: 20px; line-height: 1.6; }
+:is(.dx-root, .sc-stage) table:not([class*="chill"]) { border-collapse: collapse; font-size: 13.5px; }
+:is(.dx-root, .sc-stage) :is(th, td):not([class*="chill"]) { padding: 7px 12px; border-bottom: 1px solid var(--chill-border); text-align: left; }
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.dx-root, .sc-stage) button:not([class*="chill"]) { transition: none; }
+}
