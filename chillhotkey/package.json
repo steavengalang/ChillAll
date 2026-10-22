@@ -6,15 +6,26 @@
     "module": "src/chillhotkey.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "hotkey",
         "keyboard",
         "shortcut",
         "utility",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillhotkey"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillhotkey#readme"
 }

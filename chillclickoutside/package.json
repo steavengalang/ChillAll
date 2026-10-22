@@ -6,15 +6,26 @@
     "module": "src/chillclickoutside.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "click",
         "outside",
         "detect",
         "utility",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillclickoutside"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillclickoutside#readme"
 }

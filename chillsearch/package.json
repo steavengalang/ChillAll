@@ -1,12 +1,13 @@
 {
     "name": "chillsearch",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency search input component",
     "main": "dist/chillsearch.js",
     "module": "src/chillsearch.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "search",
@@ -14,8 +15,18 @@
         "filter",
         "ui",
         "component",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillsearch"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillsearch#readme"
 }

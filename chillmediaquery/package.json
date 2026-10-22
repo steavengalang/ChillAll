@@ -6,15 +6,26 @@
     "module": "src/chillmediaquery.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "media",
         "query",
         "responsive",
         "utility",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillmediaquery"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillmediaquery#readme"
 }

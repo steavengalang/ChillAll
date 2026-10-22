@@ -1,0 +1,38 @@
+# chillchart
+
+Zero-dependency chart library with line, bar, pie, and doughnut charts. Framework-agnostic with dark/light mode support.
+
+Part of **[ChillAll](https://github.com/steavengalang/ChillAll)**: 88 zero-dependency UI components (accessible, dark-mode ready, SSR-safe to import). chillchart is the standalone build of one of them; the `chillall` package contains all of them and is tree-shakeable.
+
+## Install
+
+```bash
+npm install chillchart
+```
+
+## Use
+
+```js
+import ChillChart from 'chillchart';          // or: const ChillChart = require('chillchart');
+
+// see the options and methods in the source header: src/chillchart.js
+```
+
+No bundler? Load the file and use the global:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/chillchart@1.1.0/dist/chillchart.js"></script>
+<script>console.log(ChillChart.version);</script>
+```
+
+## Why ChillAll components
+
+- Zero dependencies, nothing to import for styles (CSS is injected on first use)
+- Accessible: ARIA roles, keyboard support, focus management, reduced-motion
+- Dark mode via `<html data-theme="dark">` (see `chilltheme`) or the OS setting
+- Safe by default: text is rendered as text, HTML is an explicit opt-in
+- Every instance has `destroy()`
+
+## License
+
+MIT, see the [repository](https://github.com/steavengalang/ChillAll).

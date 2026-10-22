@@ -1,0 +1,32 @@
+{
+    "name": "chillfileupload",
+    "version": "1.1.0",
+    "description": "Zero-dependency File Upload Component",
+    "main": "dist/chillfileupload.js",
+    "module": "src/chillfileupload.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "fileupload",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency",
+        "framework-agnostic",
+        "chillall"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillfileupload"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillfileupload#readme"
+}

@@ -1,0 +1,32 @@
+{
+    "name": "chillmarquee",
+    "version": "1.0.0",
+    "description": "Zero-dependency Infinite Ticker Component",
+    "main": "dist/chillmarquee.js",
+    "module": "src/chillmarquee.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "marquee",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency",
+        "framework-agnostic",
+        "chillall"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillmarquee"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillmarquee#readme"
+}

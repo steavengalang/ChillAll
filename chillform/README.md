@@ -1,62 +1,38 @@
-# ChillForm
+# chillform
 
-Zero-dependency form validation library. Framework-agnostic, works everywhere.
+Zero-dependency form validation library with real-time validation and dark/light mode support. Framework-agnostic.
 
-## Installation
+Part of **[ChillAll](https://github.com/steavengalang/ChillAll)**: 88 zero-dependency UI components (accessible, dark-mode ready, SSR-safe to import). chillform is the standalone build of one of them; the `chillall` package contains all of them and is tree-shakeable.
+
+## Install
 
 ```bash
 npm install chillform
 ```
 
-Or via CDN:
+## Use
+
+```js
+import ChillForm from 'chillform';          // or: const ChillForm = require('chillform');
+
+// see the options and methods in the source header: src/chillform.js
+```
+
+No bundler? Load the file and use the global:
+
 ```html
-<script src="https://cdn.jsdelivr.net/npm/chillform@1.0.0/dist/chillform.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chillform@1.1.0/dist/chillform.js"></script>
+<script>console.log(ChillForm.version);</script>
 ```
 
-## Usage
+## Why ChillAll components
 
-```javascript
-const form = ChillForm.create('#myForm', {
-  rules: {
-    email: {
-      required: true,
-      email: true
-    },
-    password: {
-      required: true,
-      minLength: 8
-    },
-    confirmPassword: {
-      required: true,
-      match: 'password'
-    }
-  },
-  onSubmit: async (data) => {
-    console.log('Form submitted:', data);
-  }
-});
-```
-
-## Validation Rules
-
-- `required` - Field must have a value
-- `email` - Must be a valid email
-- `minLength: n` - Minimum character length
-- `maxLength: n` - Maximum character length
-- `min: n` - Minimum numeric value
-- `max: n` - Maximum numeric value
-- `pattern: regex` - Must match regex pattern
-- `match: 'fieldName'` - Must match another field
-
-## Features
-
-- Zero dependencies
-- Real-time validation
-- Dark mode support
-- Fully responsive
-- Custom validators
-- Custom error messages
+- Zero dependencies, nothing to import for styles (CSS is injected on first use)
+- Accessible: ARIA roles, keyboard support, focus management, reduced-motion
+- Dark mode via `<html data-theme="dark">` (see `chilltheme`) or the OS setting
+- Safe by default: text is rendered as text, HTML is an explicit opt-in
+- Every instance has `destroy()`
 
 ## License
 
-MIT
+MIT, see the [repository](https://github.com/steavengalang/ChillAll).

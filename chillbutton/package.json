@@ -1,24 +1,31 @@
 {
     "name": "chillbutton",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency button component with variants",
     "main": "dist/chillbutton.js",
     "module": "src/chillbutton.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "button",
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chillbutton"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillbutton"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillbutton#readme"
 }

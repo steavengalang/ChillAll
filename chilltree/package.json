@@ -6,19 +6,26 @@
     "module": "src/chilltree.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "tree",
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chilltree"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chilltree"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chilltree#readme"
 }

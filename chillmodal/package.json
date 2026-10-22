@@ -1,6 +1,6 @@
 {
     "name": "chillmodal",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency modal library with focus trap, ESC key support, and dark/light mode. Framework-agnostic.",
     "main": "dist/chillmodal.js",
     "module": "src/chillmodal.js",
@@ -18,13 +18,18 @@
         "vanilla-js",
         "zero-dependency",
         "dark-mode",
-        "framework-agnostic"
+        "framework-agnostic",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode-tech/chillmodal"
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillmodal"
     },
-    "homepage": "https://chillcode.tech"
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillmodal#readme"
 }

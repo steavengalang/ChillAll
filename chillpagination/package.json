@@ -1,20 +1,31 @@
 {
     "name": "chillpagination",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency pagination component",
     "main": "dist/chillpagination.js",
     "module": "src/chillpagination.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "pagination",
         "pager",
         "ui",
         "component",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillpagination"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillpagination#readme"
 }

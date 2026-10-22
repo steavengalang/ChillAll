@@ -6,19 +6,26 @@
     "module": "src/chillcolorpicker.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "colorpicker",
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chillcolorpicker"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillcolorpicker"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillcolorpicker#readme"
 }

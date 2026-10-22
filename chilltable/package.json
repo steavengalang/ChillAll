@@ -1,6 +1,6 @@
 {
     "name": "chilltable",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency data table library with sorting, pagination, and search. Framework-agnostic with dark/light mode support.",
     "main": "dist/chilltable.js",
     "module": "src/chilltable.js",
@@ -19,13 +19,18 @@
         "vanilla-js",
         "zero-dependency",
         "dark-mode",
-        "framework-agnostic"
+        "framework-agnostic",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode-tech/chilltable"
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chilltable"
     },
-    "homepage": "https://chillcode.tech"
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chilltable#readme"
 }

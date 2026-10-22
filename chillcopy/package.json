@@ -6,7 +6,8 @@
     "module": "src/chillcopy.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "copy",
@@ -15,12 +16,18 @@
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chillcopy"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillcopy"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillcopy#readme"
 }

@@ -1,6 +1,6 @@
 {
     "name": "chillform",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency form validation library with real-time validation and dark/light mode support. Framework-agnostic.",
     "main": "dist/chillform.js",
     "module": "src/chillform.js",
@@ -17,13 +17,18 @@
         "vanilla-js",
         "zero-dependency",
         "dark-mode",
-        "framework-agnostic"
+        "framework-agnostic",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode-tech/chillform"
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillform"
     },
-    "homepage": "https://chillcode.tech"
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillform#readme"
 }

@@ -1,50 +1,47 @@
 {
-  "name": "chillalert",
-  "version": "1.1.1",
-  "description": "A minimal, framework-agnostic alert library that works identically everywhere - supports React, Vue, Next.js with TypeScript/JavaScript",
-  "main": "dist/chillalert.js",
-  "types": "dist/chillalert.d.ts",
-  "unpkg": "dist/chillalert.js",
-  "jsdelivr": "dist/chillalert.js",
-  "files": [
-    "dist",
-    "src",
-    "README.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "test": "echo \"No tests yet\"",
-    "prepublishOnly": "echo \"Ready to publish\""
-  },
-  "keywords": [
-    "alert",
-    "notification",
-    "toast",
-    "confirm",
-    "prompt",
-    "modal",
-    "dialog",
-    "framework-agnostic",
-    "vanilla-js",
-    "zero-dependency",
-    "react",
-    "vue",
-    "tailwind"
-  ],
-  "author": "chillcode",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/steavengalang/chillalert.git"
-  },
-  "bugs": {
-    "url": "https://github.com/steavengalang/chillalert/issues"
-  },
-  "homepage": "https://github.com/steavengalang/chillalert#readme",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "chillalert": "^1.0.0"
-  }
+    "name": "chillalert",
+    "version": "1.2.0",
+    "description": "A minimal, framework-agnostic alert library that works identically everywhere - supports React, Vue, Next.js with TypeScript/JavaScript",
+    "main": "dist/chillalert.js",
+    "types": "dist/chillalert.d.ts",
+    "unpkg": "dist/chillalert.js",
+    "jsdelivr": "dist/chillalert.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "test": "echo \"No tests yet\"",
+        "prepublishOnly": "echo \"Ready to publish\""
+    },
+    "keywords": [
+        "alert",
+        "notification",
+        "toast",
+        "confirm",
+        "prompt",
+        "modal",
+        "dialog",
+        "framework-agnostic",
+        "vanilla-js",
+        "zero-dependency",
+        "react",
+        "vue",
+        "tailwind"
+    ],
+    "author": "chillcode",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll#readme",
+    "directories": {
+        "test": "test"
+    }
 }

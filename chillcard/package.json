@@ -1,0 +1,32 @@
+{
+    "name": "chillcard",
+    "version": "1.0.0",
+    "description": "Zero-dependency Card Component",
+    "main": "dist/chillcard.js",
+    "module": "src/chillcard.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "card",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency",
+        "framework-agnostic",
+        "chillall"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillcard"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillcard#readme"
+}

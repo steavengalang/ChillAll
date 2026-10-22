@@ -1,12 +1,13 @@
 {
     "name": "chilltag",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency tag/chip component",
     "main": "dist/chilltag.js",
     "module": "src/chilltag.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "tag",
@@ -14,8 +15,18 @@
         "label",
         "ui",
         "component",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chilltag"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chilltag#readme"
 }

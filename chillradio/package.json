@@ -1,20 +1,31 @@
 {
     "name": "chillradio",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency radio button component",
     "main": "dist/chillradio.js",
     "module": "src/chillradio.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "radio",
         "form",
         "ui",
         "component",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillradio"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillradio#readme"
 }

@@ -6,7 +6,8 @@
     "module": "src/chillsplitter.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "splitter",
@@ -16,12 +17,18 @@
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chillsplitter"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillsplitter"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillsplitter#readme"
 }

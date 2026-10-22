@@ -6,7 +6,8 @@
     "module": "src/chillreveal.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "reveal",
@@ -15,12 +16,18 @@
         "ui",
         "component",
         "vanilla-js",
-        "zero-dependency"
+        "zero-dependency",
+        "chillall"
     ],
     "author": "ChillCode Tech",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/chillcode/chillreveal"
-    }
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillreveal"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillreveal#readme"
 }

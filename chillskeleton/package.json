@@ -1,12 +1,13 @@
 {
     "name": "chillskeleton",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Zero-dependency skeleton loading component",
     "main": "dist/chillskeleton.js",
     "module": "src/chillskeleton.js",
     "files": [
         "dist",
-        "src"
+        "src",
+        "README.md"
     ],
     "keywords": [
         "skeleton",
@@ -14,8 +15,18 @@
         "placeholder",
         "ui",
         "component",
-        "vanilla-js"
+        "vanilla-js",
+        "chillall"
     ],
     "author": "ChillCode Tech",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillskeleton"
+    },
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll/tree/main/chillskeleton#readme"
 }
