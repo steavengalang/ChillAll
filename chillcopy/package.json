@@ -1,0 +1,26 @@
+{
+    "name": "chillcopy",
+    "version": "1.0.0",
+    "description": "Zero-dependency copy-to-clipboard helper and button with execCommand fallback",
+    "main": "dist/chillcopy.js",
+    "module": "src/chillcopy.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "copy",
+        "clipboard",
+        "button",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillcopy"
+    }
+}

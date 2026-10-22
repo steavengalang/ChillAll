@@ -1,0 +1,20 @@
+{
+    "name": "chillaccordion",
+    "version": "1.0.0",
+    "description": "Zero-dependency accordion component",
+    "main": "dist/chillaccordion.js",
+    "module": "src/chillaccordion.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "accordion",
+        "collapse",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "chillprovider",
+    "version": "1.1.0",
+    "description": "Zero-dependency configuration provider utility",
+    "main": "dist/chillprovider.js",
+    "module": "src/chillprovider.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "provider",
+        "context",
+        "config",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

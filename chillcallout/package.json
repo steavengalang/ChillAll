@@ -1,0 +1,27 @@
+{
+    "name": "chillcallout",
+    "version": "1.0.0",
+    "description": "Zero-dependency inline callout / banner with variants, actions, dismiss and collapse",
+    "main": "dist/chillcallout.js",
+    "module": "src/chillcallout.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "callout",
+        "banner",
+        "alert",
+        "notice",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillcallout"
+    }
+}

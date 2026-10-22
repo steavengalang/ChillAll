@@ -1,0 +1,21 @@
+{
+    "name": "chillnavbar",
+    "version": "1.1.0",
+    "description": "Zero-dependency responsive navigation bar component",
+    "main": "dist/chillnavbar.js",
+    "module": "src/chillnavbar.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "navbar",
+        "navigation",
+        "header",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

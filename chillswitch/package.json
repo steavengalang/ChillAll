@@ -1,0 +1,21 @@
+{
+    "name": "chillswitch",
+    "version": "1.0.0",
+    "description": "Zero-dependency toggle switch component",
+    "main": "dist/chillswitch.js",
+    "module": "src/chillswitch.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "switch",
+        "toggle",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

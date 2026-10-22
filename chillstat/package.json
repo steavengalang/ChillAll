@@ -1,0 +1,24 @@
+{
+    "name": "chillstat",
+    "version": "1.0.0",
+    "description": "Zero-dependency stat component",
+    "main": "dist/chillstat.js",
+    "module": "src/chillstat.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "stat",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillstat"
+    }
+}

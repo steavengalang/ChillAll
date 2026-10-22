@@ -1,0 +1,29 @@
+{
+    "name": "chillform",
+    "version": "1.0.0",
+    "description": "Zero-dependency form validation library with real-time validation and dark/light mode support. Framework-agnostic.",
+    "main": "dist/chillform.js",
+    "module": "src/chillform.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "form",
+        "validation",
+        "form-validation",
+        "validator",
+        "vanilla-js",
+        "zero-dependency",
+        "dark-mode",
+        "framework-agnostic"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode-tech/chillform"
+    },
+    "homepage": "https://chillcode.tech"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "chilltoolkit",
+    "version": "1.0.0",
+    "description": "Small helpers: debounce, throttle, uid, clamp, formatBytes, slugify and more",
+    "main": "dist/chilltoolkit.js",
+    "module": "src/chilltoolkit.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "utils",
+        "helpers",
+        "debounce",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilltoolkit"
+    }
+}

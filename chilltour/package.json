@@ -1,0 +1,27 @@
+{
+    "name": "chilltour",
+    "version": "1.0.0",
+    "description": "Zero-dependency onboarding product tour with spotlight cut-out and step popovers",
+    "main": "dist/chilltour.js",
+    "module": "src/chilltour.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "tour",
+        "onboarding",
+        "walkthrough",
+        "spotlight",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilltour"
+    }
+}

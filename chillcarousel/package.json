@@ -1,0 +1,24 @@
+{
+    "name": "chillcarousel",
+    "version": "1.0.0",
+    "description": "Zero-dependency carousel component",
+    "main": "dist/chillcarousel.js",
+    "module": "src/chillcarousel.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "carousel",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillcarousel"
+    }
+}

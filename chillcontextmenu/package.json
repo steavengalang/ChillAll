@@ -1,0 +1,27 @@
+{
+    "name": "chillcontextmenu",
+    "version": "1.0.0",
+    "description": "Zero-dependency context menu with submenus, shortcuts, keyboard navigation and long-press",
+    "main": "dist/chillcontextmenu.js",
+    "module": "src/chillcontextmenu.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "contextmenu",
+        "context-menu",
+        "right-click",
+        "menu",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillcontextmenu"
+    }
+}

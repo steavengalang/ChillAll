@@ -1,0 +1,24 @@
+{
+    "name": "chillautocomplete",
+    "version": "1.0.0",
+    "description": "Zero-dependency accessible autocomplete combobox",
+    "main": "dist/chillautocomplete.js",
+    "module": "src/chillautocomplete.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "autocomplete",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillautocomplete"
+    }
+}

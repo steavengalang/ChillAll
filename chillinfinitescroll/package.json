@@ -1,0 +1,22 @@
+{
+    "name": "chillinfinitescroll",
+    "version": "1.0.0",
+    "description": "Zero-dependency infinite scroll component",
+    "main": "dist/chillinfinitescroll.js",
+    "module": "src/chillinfinitescroll.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "infinite",
+        "scroll",
+        "lazy",
+        "load",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

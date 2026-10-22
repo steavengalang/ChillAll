@@ -1,0 +1,26 @@
+{
+    "name": "chillfetch",
+    "version": "1.0.0",
+    "description": "Fetch wrapper with timeout, retry, interceptors and JSON helpers",
+    "main": "dist/chillfetch.js",
+    "module": "src/chillfetch.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "fetch",
+        "http",
+        "ajax",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillfetch"
+    }
+}

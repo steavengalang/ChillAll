@@ -1,0 +1,24 @@
+{
+    "name": "chillotp",
+    "version": "1.0.0",
+    "description": "Zero-dependency OTP / PIN code input",
+    "main": "dist/chillotp.js",
+    "module": "src/chillotp.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "otp",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillotp"
+    }
+}

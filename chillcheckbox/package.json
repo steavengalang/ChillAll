@@ -1,0 +1,20 @@
+{
+    "name": "chillcheckbox",
+    "version": "1.0.0",
+    "description": "Zero-dependency checkbox component",
+    "main": "dist/chillcheckbox.js",
+    "module": "src/chillcheckbox.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "checkbox",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

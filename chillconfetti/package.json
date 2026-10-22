@@ -1,0 +1,27 @@
+{
+    "name": "chillconfetti",
+    "version": "1.0.0",
+    "description": "Tiny zero-dependency canvas confetti burst",
+    "main": "dist/chillconfetti.js",
+    "module": "src/chillconfetti.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "confetti",
+        "celebration",
+        "canvas",
+        "animation",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillconfetti"
+    }
+}

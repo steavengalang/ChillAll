@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChillAll - every ChillLib component in one file</title>
+<style>
+  :root { --bg:#f8fafc; --fg:#0f172a; --muted:#64748b; --card:#fff; --line:#e2e8f0; --brand:#3b82f6; }
+  :root[data-theme="dark"] { --bg:#0b1020; --fg:#e5e7eb; --muted:#94a3b8; --card:#111827; --line:#1f2937; --brand:#60a5fa; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); }
+  header { position:sticky; top:0; z-index:50; display:flex; gap:12px; align-items:center; padding:12px 24px; background:var(--card); border-bottom:1px solid var(--line); }
+  header h1 { font-size:18px; margin:0; }
+  header .count { color:var(--muted); }
+  header .sp { flex:1; }
+  header input { padding:8px 12px; border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--fg); width:min(280px,40vw); }
+  nav.cats { display:flex; flex-wrap:wrap; gap:8px; padding:16px 24px 0; }
+  nav.cats a { padding:4px 12px; border:1px solid var(--line); border-radius:999px; color:var(--muted); text-decoration:none; background:var(--card); }
+  nav.cats a:hover { color:var(--brand); border-color:var(--brand); }
+  main { padding:8px 24px 64px; max-width:1400px; margin:0 auto; }
+  h2 { margin:32px 0 12px; font-size:20px; text-transform:capitalize; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px; min-width:0; }
+  .card h3 { margin:0 0 2px; font-size:15px; display:flex; gap:8px; align-items:baseline; }
+  .card h3 small { color:var(--muted); font-weight:400; font-size:12px; }
+  .card .api { color:var(--muted); font-size:12px; margin:0 0 12px; max-height:3.2em; overflow:hidden; }
+  .stage { display:flex; flex-wrap:wrap; gap:10px; align-items:flex-start; min-height:40px; position:relative; }
+  .stage > * { max-width:100%; }
+  .err { color:#b91c1c; background:#fee2e2; border-radius:8px; padding:8px; font:12px ui-monospace,monospace; width:100%; white-space:pre-wrap; }
+  button.demo { padding:8px 14px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--fg); cursor:pointer; }
+  button.demo:hover { border-color:var(--brand); color:var(--brand); }
+  .h { height:180px; width:100%; overflow:auto; border:1px dashed var(--line); border-radius:8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ChillAll</h1><span class="count" id="count"></span><span class="sp"></span>
+  <input id="q" type="search" placeholder="Filter components…" aria-label="Filter components">
+  <button class="demo" id="theme">Toggle theme</button>
+</header>
+<nav class="cats" id="cats"></nav>
+<main id="main"></main>
+
+<script src="../dist/chillall.js"></script>
+<script>
+(function () {
+  const A = window.ChillAll;
+  const $ = (s, r = document) => r.querySelector(s);
+  document.getElementById('count').textContent = A.totalLibraries + ' components · v' + A.version + ' · one file';
+
+  // Make demo pages follow ChillTheme (sets <html data-theme>)
+  A.Theme.setTheme(A.Theme.getTheme() || 'system');
+  document.getElementById('theme').onclick = () => A.Theme.toggle();
+
+  // Place any instance/element that did not mount itself.
+  function mount(res, c) {
+    const el = res && (res.element || res.el || res.wrapper || res.container || (res.nodeType === 1 ? res : null));
+    if (el && el.nodeType === 1 && !el.isConnected) c.appendChild(el);
+    return res;
+  }
+  const items = ['Apple', 'Banana', 'Cherry', 'Dragonfruit', 'Elderberry', 'Fig', 'Grape'];
+  const btn = (t, fn) => { const b = document.createElement('button'); b.className = 'demo'; b.textContent = t; b.onclick = fn; return b; };
+
+  // ---- live examples: key -> (stage) => void ---------------------------------------------------
+  const ex = {
+    Alert: c => { c.append(btn('Alert', () => A.Alert.alert({ title: 'Hello', text: 'ChillAlert works.', icon: 'success' })), btn('Confirm', () => A.Alert.confirm({ title: 'Sure?', text: 'Delete it?' }).then(r => A.Alert.toast({ title: 'Result: ' + r }))), btn('Toast', () => A.Alert.toast({ title: 'Saved!', icon: 'success' }))); },
+    Notify: c => { c.append(btn('Notify', () => A.Notify.show({ title: 'Heads up', message: 'Something happened', type: 'info', duration: 3000 }))); },
+    Modal: c => { c.append(btn('Open modal', () => A.Modal.open({ title: 'Modal', content: '<p>Focus-trapped, Esc closes.</p>', buttons: [{ text: 'OK', type: 'primary' }] }))); },
+    Button: c => { ['primary', 'secondary', 'success', 'danger', 'warning'].forEach(v => c.append(A.Button.create({ text: v, variant: v, ripple: true }))); c.append(A.Button.create({ text: 'Loading…', loading: true })); },
+    Input: c => { mount(A.Input.create({ label: 'Email', placeholder: 'you@example.com', clearable: true, helper: 'We never share it', container: c, parent: c }), c); },
+    Textarea: c => { mount(A.Textarea.create({ label: 'Message', autoResize: true, maxRows: 5, container: c, parent: c }), c); },
+    Select: c => { mount(A.Select.create({ label: 'Fruit', options: items.map(i => ({ value: i, label: i })), searchable: true, container: c, parent: c }), c); },
+    Checkbox: c => { mount(A.Checkbox.create({ label: 'Accept terms', description: 'You must agree', container: c, parent: c }), c); },
+    Switch: c => { mount(A.Switch.create({ label: 'Notifications', checked: true, container: c, parent: c }), c); },
+    Slider: c => { A.Slider.create({ range: true, value: [20, 70], marks: true, tooltip: 'always', container: c }); },
+    Rating: c => { A.Rating.create({ value: 3.5, half: true, container: c }); },
+    Otp: c => { A.Otp.create({ length: 6, onComplete: v => A.Notify.show({ message: 'Code ' + v, type: 'success', duration: 2000 }), container: c }); },
+    ColorPicker: c => { A.ColorPicker.create({ value: '#8b5cf6', popover: true, container: c }); },
+    TimePicker: c => { A.TimePicker.create({ value: '09:30', popover: true, minuteStep: 5, container: c }); },
+    NumberInput: c => { A.NumberInput.create({ value: 5, min: 0, max: 10, step: 1, container: c }); },
+    TagInput: c => { A.TagInput.create({ value: ['alpha', 'beta'], suggestions: items, container: c }); },
+    Autocomplete: c => { A.Autocomplete.create({ source: items, placeholder: 'Type a fruit…', container: c }); },
+    Segmented: c => { A.Segmented.create({ items: ['Day', 'Week', 'Month'], value: 'Week', container: c }); },
+    Spinner: c => { ['ring', 'dots', 'bars', 'pulse'].forEach(t => c.append(mount(A.Spinner.create({ type: t, size: 'lg' }), c).element || '')); },
+    Callout: c => { A.Callout.create({ type: 'warning', title: 'Heads up', message: 'This is a callout.', dismissible: true, container: c }); },
+    Progress: c => { const h = document.createElement('div'); h.style.width = '100%'; c.append(h); A.Progress.init(h, { value: 65, label: 'Uploading' }); c.append(A.Progress.createCircle({ value: 72, size: 'md' })); },
+    Skeleton: c => { c.append(A.Skeleton.preset('card', {})); },
+    EmptyState: c => { mount(A.EmptyState.create({ preset: 'noResults', title: 'Nothing found', description: 'Try another search' }), c); },
+    Badge: c => { c.append(A.Badge.create({ text: 'New', variant: 'primary' }), A.Badge.createDot ? A.Badge.createDot({ variant: 'success', pulse: true }) : ''); },
+    Tag: c => { c.append(A.Tag.create({ text: 'Design', color: 'purple', removable: true })); },
+    Avatar: c => { c.append(A.Avatar.create({ name: 'Ada Lovelace', size: 'lg' })); },
+    Tooltip: c => { const b = btn('Hover me'); c.append(b); A.Tooltip.init(b, { content: 'Hello tooltip', placement: 'top' }); },
+    Popover: c => { const b = btn('Click me'); c.append(b); A.Popover.init(b, { title: 'Popover', content: 'Some content', trigger: 'click' }); },
+    Accordion: c => { const h = document.createElement('div'); h.style.width = '100%'; c.append(h); A.Accordion.init(h, { items: [{ title: 'One', content: 'First panel' }, { title: 'Two', content: 'Second panel' }], mode: 'single' }); },
+    Drawer: c => { c.append(btn('Open drawer', () => A.Drawer.open({ title: 'Drawer', content: 'Slide-in panel', side: 'right' }))); },
+    ContextMenu: c => { const z = document.createElement('div'); z.textContent = 'Right-click (or long-press) me'; z.style.cssText = 'padding:24px;border:1px dashed var(--line);border-radius:8px;width:100%;text-align:center'; c.append(z); A.ContextMenu.attach(z, { items: [{ label: 'Copy', shortcut: 'Ctrl+C' }, { label: 'Paste' }, { type: 'separator' }, { label: 'Delete', danger: true }] }); },
+    Lightbox: c => { c.append(btn('Open lightbox', () => A.Lightbox.open(['data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="600" height="400" fill="%233b82f6"/></svg>', 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400"><rect width="600" height="400" fill="%2310b981"/></svg>'], 0))); },
+    Tour: c => { c.append(btn('Start tour', () => A.Tour.start([{ target: '#theme', title: 'Theme', content: 'Toggle dark mode here' }, { target: '#q', title: 'Search', content: 'Filter components' }], {}))); },
+    Copy: c => { return A.Copy.create({ text: 'npm i chillall', container: c }); },
+    BackToTop: c => { c.append(btn('Enable back-to-top', () => A.BackToTop.create({ threshold: 100 }))); },
+    Confetti: c => { c.append(btn('Fire confetti 🎉', e => A.Confetti.fire({ origin: e.currentTarget, count: 120 }))); },
+    Card: c => { A.Card.create({ title: 'Card title', subtitle: 'Subtitle', body: 'Card body text goes here.', footer: 'Footer', hoverable: true, container: c, parent: c }); },
+    Divider: c => { A.Divider.create({ label: 'OR', gradient: true, parent: c, container: c }); },
+    Timeline: c => { return A.Timeline.create({ items: [{ title: 'Created', time: 'Mon', status: 'success' }, { title: 'Reviewed', time: 'Tue', status: 'info' }, { title: 'Shipped', time: 'Wed', status: 'pending' }], container: c, parent: c }); },
+    Stepper: c => { return A.Stepper.create({ steps: [{ title: 'Account' }, { title: 'Profile' }, { title: 'Done' }], current: 1, controls: true, container: c, parent: c }); },
+    Tree: c => { return A.Tree.create({ checkable: true, expandAll: true, nodes: [{ id: 1, label: 'src', children: [{ id: 2, label: 'index.js' }, { id: 3, label: 'util.js' }] }, { id: 4, label: 'README.md' }], container: c, parent: c }); },
+    Carousel: c => { return A.Carousel.create({ slides: ['Slide 1', 'Slide 2', 'Slide 3'].map(t => { const d = document.createElement('div'); d.textContent = t; d.style.cssText = 'height:120px;display:grid;place-items:center;background:var(--bg);border-radius:8px'; return d; }), loop: true, container: c, parent: c }); },
+    Stat: c => { return A.Stat.create({ label: 'Revenue', value: 12840, prefix: '$', delta: 12.5, sparkline: [3, 5, 4, 7, 6, 9, 12], countUp: true, container: c, parent: c }); },
+    Calendar: c => { return A.Calendar.create({ mode: 'range', events: [{ id: 1, date: new Date(), title: 'Today', color: '#3b82f6' }], container: c, parent: c }); },
+    Code: c => { A.Code.create({ code: 'const hi = (n) => `hello ${n}`;\nconsole.log(hi("chill"));', language: 'js', lineNumbers: true, title: 'example.js', container: c, parent: c }); },
+    Marquee: c => { A.Marquee.create({ items: items, speed: 50, pauseOnHover: true, container: c, parent: c }); },
+    Countdown: c => { return A.Countdown.create({ duration: 90 * 1000, container: c, parent: c }); },
+    VirtualList: c => { return A.VirtualList.create({ items: Array.from({ length: 100000 }, (_, i) => 'Row ' + (i + 1)), renderItem: (x) => x, itemHeight: 32, height: 180, container: c, parent: c }); },
+    Kbd: c => { c.innerHTML = '<kbd>mod+k</kbd> <kbd>shift+enter</kbd>'; A.Kbd.init(c.querySelectorAll('kbd')); },
+    RelTime: c => { const t = document.createElement('time'); t.setAttribute('datetime', new Date(Date.now() - 5 * 60e3).toISOString()); c.append(t); A.RelTime.init(t); },
+    Fullscreen: c => { c.append(A.Fullscreen.createButton({ target: document.documentElement }).element || A.Fullscreen.createButton({ target: document.documentElement })); },
+    Pagination: c => { const h = document.createElement('div'); c.append(h); A.Pagination.init(h, { total: 200, pageSize: 10, current: 3, showSizeChanger: true }); },
+    Breadcrumb: c => { const h = document.createElement('div'); c.append(h); A.Breadcrumb.init(h, { items: [{ label: 'Home', href: '#' }, { label: 'Docs', href: '#' }, { label: 'ChillAll' }] }); },
+    Tabs: c => { const h = document.createElement('div'); h.style.width = '100%'; c.append(h); A.Tabs.init(h, { tabs: [{ id: 'a', label: 'One', content: 'First' }, { id: 'b', label: 'Two', content: 'Second' }] }); },
+    Table: c => { const h = document.createElement('div'); h.style.width = '100%'; c.append(h); A.Table.create ? A.Table.create(h, { columns: [{ key: 'n', label: 'Name', sortable: true }, { key: 'q', label: 'Qty', sortable: true }], data: items.map((n, i) => ({ n, q: (i * 7) % 11 })), selectable: true, stickyHeader: true }) : A.Table.init(h, { columns: [{ key: 'n', label: 'Name' }], data: [] }); },
+    Chart: c => { const h = document.createElement('div'); h.style.cssText = 'width:100%;height:200px'; c.append(h); (A.Chart.create || A.Chart.init)(h, { type: 'bar', data: { labels: ['Mon', 'Tue', 'Wed', 'Thu'], datasets: [{ label: 'Sales', data: [12, 19, 7, 15] }] } }); },
+    Date: c => { const i = document.createElement('input'); i.placeholder = 'Pick a date'; i.style.cssText = 'padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)'; c.append(i); (A.Date.init || A.Date.create)(i, {}); },
+    Form: c => { const f = document.createElement('form'); f.innerHTML = '<input name="email" placeholder="email" style="padding:8px;margin-right:8px"><button class="demo">Submit</button>'; c.append(f); (A.Form.create || A.Form.init)(f, { fields: { email: { required: true, email: true } }, onSubmit: d => A.Notify.show({ message: 'Valid: ' + d.email, type: 'success', duration: 2000 }) }); },
+    Splitter: c => { const w = document.createElement('div'); w.className = 'h'; w.innerHTML = '<div style="padding:8px">Left</div><div style="padding:8px">Right</div>'; c.append(w); A.Splitter.init(w, { direction: 'horizontal', sizes: [40, 60] }); },
+    Masonry: c => { const w = document.createElement('div'); w.style.width = '100%'; for (let i = 0; i < 8; i++) { const d = document.createElement('div'); d.textContent = 'Item ' + i; d.style.cssText = 'background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:' + (10 + (i * 13) % 40) + 'px'; w.append(d); } c.append(w); A.Masonry.init(w, { columns: 3, gap: 8 }); },
+    Animate: c => { const b = btn('Shake me', () => A.Animate.shake(b)); c.append(b, btn('Pulse', e => A.Animate.pulse(e.currentTarget))); },
+    Events: c => { const bus = A.Events.create(); c.append(btn('emit', () => bus.emit('hi', 1))); bus.on('hi', v => A.Notify.show({ message: 'event ' + v, duration: 1500 })); },
+    Storage: c => { const s = A.Storage.create({ namespace: 'demo', type: 'memory' }); s.set('k', { a: 1 }, { ttl: 1000 }); c.append('stored: ' + JSON.stringify(s.get('k'))); },
+    Toolkit: c => { c.append(A.Toolkit.formatBytes(1536000) + ' · ' + A.Toolkit.slugify('Hello World!') + ' · ' + A.Toolkit.uid().slice(0, 6)); },
+    Theme: c => { c.append(btn('Cycle theme', () => A.Theme.cycle ? A.Theme.cycle() : A.Theme.toggle())); }
+  };
+
+  // ---- render ----------------------------------------------------------------------------------
+  const main = document.getElementById('main'), cats = document.getElementById('cats');
+  const failed = [];
+  Object.entries(A.categories).forEach(([cat, names]) => {
+    cats.insertAdjacentHTML('beforeend', '<a href="#cat-' + cat + '">' + cat + ' (' + names.length + ')</a>');
+    const h = document.createElement('h2'); h.id = 'cat-' + cat; h.textContent = cat.replace(/([A-Z])/g, ' $1'); main.append(h);
+    const grid = document.createElement('div'); grid.className = 'grid'; main.append(grid);
+    names.forEach(n => {
+      const info = A.components.find(x => x.name === n), lib = A[info.key];
+      const card = document.createElement('section'); card.className = 'card'; card.dataset.name = n;
+      const methods = Object.keys(lib).filter(k => typeof lib[k] === 'function').slice(0, 8).join(' · ');
+      card.innerHTML = '<h3>' + info.global + ' <small>v' + (lib.version || '?') + '</small></h3><p class="api">' + methods + '</p>';
+      const stage = document.createElement('div'); stage.className = 'stage'; card.append(stage);
+      if (ex[info.key]) {
+        try { mount(ex[info.key](stage), stage); } catch (e) { failed.push(info.key + ': ' + e.message); const d = document.createElement('div'); d.className = 'err'; d.textContent = e.stack || e.message; stage.append(d); }
+      } else { stage.textContent = 'API only - see README'; stage.style.color = 'var(--muted)'; }
+      grid.append(card);
+    });
+  });
+  window.__demoFailures = failed;
+  document.getElementById('q').addEventListener('input', e => {
+    const v = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('.card').forEach(c => { c.style.display = !v || c.dataset.name.includes(v) ? '' : 'none'; });
+  });
+})();
+</script>
+</body>
+</html>

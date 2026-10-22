@@ -1,0 +1,21 @@
+{
+    "name": "chillcommand",
+    "version": "1.1.0",
+    "description": "Zero-dependency command palette component",
+    "main": "dist/chillcommand.js",
+    "module": "src/chillcommand.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "command",
+        "palette",
+        "search",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

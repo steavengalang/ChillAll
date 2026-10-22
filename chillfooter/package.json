@@ -1,0 +1,20 @@
+{
+    "name": "chillfooter",
+    "version": "1.1.0",
+    "description": "Zero-dependency footer component",
+    "main": "dist/chillfooter.js",
+    "module": "src/chillfooter.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "footer",
+        "navigation",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

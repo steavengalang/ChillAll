@@ -1,0 +1,21 @@
+{
+    "name": "chillskeleton",
+    "version": "1.0.0",
+    "description": "Zero-dependency skeleton loading component",
+    "main": "dist/chillskeleton.js",
+    "module": "src/chillskeleton.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "skeleton",
+        "loading",
+        "placeholder",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

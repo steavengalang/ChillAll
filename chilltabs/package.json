@@ -1,0 +1,20 @@
+{
+    "name": "chilltabs",
+    "version": "1.1.0",
+    "description": "Zero-dependency tabs navigation component",
+    "main": "dist/chilltabs.js",
+    "module": "src/chilltabs.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "tabs",
+        "navigation",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

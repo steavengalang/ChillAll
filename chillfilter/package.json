@@ -1,0 +1,20 @@
+{
+    "name": "chillfilter",
+    "version": "1.0.0",
+    "description": "Zero-dependency filter component",
+    "main": "dist/chillfilter.js",
+    "module": "src/chillfilter.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "filter",
+        "data",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

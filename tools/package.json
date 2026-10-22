@@ -1,0 +1,15 @@
+{
+  "name": "chillall-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Build + test tooling for the ChillLib monorepo (not published)",
+  "scripts": {
+    "build": "node build.js",
+    "smoke": "node smoke.js",
+    "test": "node smoke.js --all"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "chillpopover",
+    "version": "1.0.0",
+    "description": "Zero-dependency popover component",
+    "main": "dist/chillpopover.js",
+    "module": "src/chillpopover.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "popover",
+        "tooltip",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

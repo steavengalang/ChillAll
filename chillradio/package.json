@@ -1,0 +1,20 @@
+{
+    "name": "chillradio",
+    "version": "1.0.0",
+    "description": "Zero-dependency radio button component",
+    "main": "dist/chillradio.js",
+    "module": "src/chillradio.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "radio",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

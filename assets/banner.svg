@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" width="1280" height="340" role="img" aria-labelledby="t d">
+  <title id="t">ChillAll</title>
+  <desc id="d">ChillAll - 88 zero-dependency UI components in one install</desc>
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="glowG" cx="0.12" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#22c55e" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.95" cy="0.95" r="0.7">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1c1f"/>
+      <stop offset="1" stop-color="#141416"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="round"><rect width="1280" height="340" rx="26"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1280" height="340" fill="#0a0a0a"/>
+    <rect width="1280" height="340" fill="url(#glowG)"/>
+    <rect width="1280" height="340" fill="url(#glowB)"/>
+    <!-- subtle grid -->
+    <g stroke="#ffffff" stroke-opacity="0.04">
+      <path d="M0 85H1280M0 170H1280M0 255H1280"/>
+      <path d="M160 0V340M320 0V340M480 0V340M640 0V340M800 0V340M960 0V340M1120 0V340"/>
+    </g>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="339" rx="25.5" fill="none" stroke="#ffffff" stroke-opacity="0.10"/>
+
+  <!-- wordmark -->
+  <g font-family="Inter, 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif">
+    <text x="72" y="152" font-size="96" font-weight="800" letter-spacing="-3" fill="url(#brand)">ChillAll</text>
+    <text x="76" y="204" font-size="27" font-weight="500" fill="#e5e7eb">88 zero-dependency UI components. One install.</text>
+    <text x="76" y="240" font-size="18" fill="#9ca3af">Accessible · dark-mode ready · tree-shakeable · SSR-safe</text>
+
+    <!-- chips -->
+    <g font-size="16" font-weight="650">
+      <rect x="76" y="268" width="128" height="38" rx="19" fill="#22c55e" fill-opacity="0.14" stroke="#22c55e" stroke-opacity="0.5"/>
+      <text x="140" y="292.5" text-anchor="middle" fill="#4ade80">88 components</text>
+      <rect x="216" y="268" width="150" height="38" rx="19" fill="#3b82f6" fill-opacity="0.14" stroke="#3b82f6" stroke-opacity="0.5"/>
+      <text x="291" y="292.5" text-anchor="middle" fill="#60a5fa">0 dependencies</text>
+      <rect x="378" y="268" width="142" height="38" rx="19" fill="#a855f7" fill-opacity="0.14" stroke="#a855f7" stroke-opacity="0.5"/>
+      <text x="449" y="292.5" text-anchor="middle" fill="#c084fc">MIT licensed</text>
+    </g>
+  </g>
+
+  <!-- floating UI cards -->
+  <g filter="url(#shadow)">
+    <!-- card 1: toggle + button -->
+    <g transform="translate(790 46)">
+      <rect width="210" height="116" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.10"/>
+      <rect x="22" y="24" width="52" height="30" rx="15" fill="url(#brand)"/>
+      <circle cx="59" cy="39" r="11" fill="#fff"/>
+      <rect x="88" y="31" width="84" height="8" rx="4" fill="#ffffff" fill-opacity="0.55"/>
+      <rect x="88" y="45" width="56" height="6" rx="3" fill="#ffffff" fill-opacity="0.22"/>
+      <rect x="22" y="70" width="166" height="30" rx="10" fill="url(#brand)"/>
+      <text x="105" y="90" text-anchor="middle" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="700" fill="#04210f">Save changes</text>
+    </g>
+    <!-- card 2: slider + rating -->
+    <g transform="translate(1020 98)">
+      <rect width="196" height="132" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.10"/>
+      <rect x="22" y="30" width="152" height="6" rx="3" fill="#ffffff" fill-opacity="0.14"/>
+      <rect x="22" y="30" width="96" height="6" rx="3" fill="url(#brand)"/>
+      <circle cx="118" cy="33" r="10" fill="#fff" stroke="#3b82f6" stroke-width="3"/>
+      <g fill="#f59e0b" transform="translate(22 62)">
+        <path d="M11 1l2.9 6 6.6.9-4.8 4.6 1.2 6.5L11 15.8 5.1 19l1.2-6.5L1.5 7.9 8.1 7z"/>
+        <path transform="translate(26 0)" d="M11 1l2.9 6 6.6.9-4.8 4.6 1.2 6.5L11 15.8 5.1 19l1.2-6.5L1.5 7.9 8.1 7z"/>
+        <path transform="translate(52 0)" d="M11 1l2.9 6 6.6.9-4.8 4.6 1.2 6.5L11 15.8 5.1 19l1.2-6.5L1.5 7.9 8.1 7z"/>
+        <path transform="translate(78 0)" d="M11 1l2.9 6 6.6.9-4.8 4.6 1.2 6.5L11 15.8 5.1 19l1.2-6.5L1.5 7.9 8.1 7z"/>
+        <path transform="translate(104 0)" fill="#ffffff" fill-opacity="0.18" d="M11 1l2.9 6 6.6.9-4.8 4.6 1.2 6.5L11 15.8 5.1 19l1.2-6.5L1.5 7.9 8.1 7z"/>
+      </g>
+      <rect x="22" y="100" width="70" height="8" rx="4" fill="#ffffff" fill-opacity="0.35"/>
+    </g>
+    <!-- card 3: tag chips -->
+    <g transform="translate(840 186)">
+      <rect width="150" height="104" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity="0.10"/>
+      <rect x="18" y="20" width="62" height="26" rx="13" fill="#22c55e" fill-opacity="0.18" stroke="#22c55e" stroke-opacity="0.55"/>
+      <rect x="88" y="20" width="44" height="26" rx="13" fill="#3b82f6" fill-opacity="0.18" stroke="#3b82f6" stroke-opacity="0.55"/>
+      <rect x="18" y="56" width="50" height="26" rx="13" fill="#a855f7" fill-opacity="0.18" stroke="#a855f7" stroke-opacity="0.55"/>
+      <rect x="76" y="56" width="56" height="26" rx="13" fill="#f59e0b" fill-opacity="0.18" stroke="#f59e0b" stroke-opacity="0.55"/>
+    </g>
+  </g>
+</svg>

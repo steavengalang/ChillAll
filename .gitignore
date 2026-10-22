@@ -1,0 +1,39 @@
+# ---- dependencies --------------------------------------------------------
+node_modules/
+
+# ---- the documentation website lives in its own project -------------------
+Chillcode_Tech/
+
+# ---- generated artifacts (rebuild with `node tools/build.js` / `node tools/sync.js`) ----
+# the single-file bundle and its generated sources
+chillall/dist/
+chillall/src/
+# per-component dist/ folders are byte-identical copies of src/ (tools/sync.js)
+/chill*/dist/
+
+# ---- legacy meta-packages, superseded by `chillall` -------------------------
+chillcore/
+chilldata/
+chillforms/
+chillnav/
+chillfeedback/
+chillutils/
+
+# ---- editor / OS / tooling noise ----------------------------------------
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env
+.env.*
+coverage/
+
+# ---- old, unrelated files --------------------------------------------------
+test/
+PUBLISH.md
+image.png
+image copy.png
+theme_light_mode.png

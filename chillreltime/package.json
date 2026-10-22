@@ -1,0 +1,26 @@
+{
+    "name": "chillreltime",
+    "version": "1.0.0",
+    "description": "Relative time (\"3 minutes ago\") with auto-updating <time> elements",
+    "main": "dist/chillreltime.js",
+    "module": "src/chillreltime.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "time",
+        "relative",
+        "intl",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillreltime"
+    }
+}

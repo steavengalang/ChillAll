@@ -1,0 +1,27 @@
+{
+    "name": "chillspinner",
+    "version": "1.0.0",
+    "description": "Zero-dependency spinners and loaders (ring, dots, bars, pulse) with element overlay and fullscreen modes",
+    "main": "dist/chillspinner.js",
+    "module": "src/chillspinner.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "spinner",
+        "loader",
+        "loading",
+        "overlay",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillspinner"
+    }
+}

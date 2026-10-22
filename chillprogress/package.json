@@ -1,0 +1,21 @@
+{
+    "name": "chillprogress",
+    "version": "1.0.0",
+    "description": "Zero-dependency progress bar component",
+    "main": "dist/chillprogress.js",
+    "module": "src/chillprogress.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "progress",
+        "loading",
+        "bar",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

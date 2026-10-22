@@ -1,0 +1,21 @@
+{
+    "name": "chillemptystate",
+    "version": "1.0.0",
+    "description": "Zero-dependency empty state component",
+    "main": "dist/chillemptystate.js",
+    "module": "src/chillemptystate.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "empty",
+        "state",
+        "placeholder",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

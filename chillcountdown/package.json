@@ -1,0 +1,24 @@
+{
+    "name": "chillcountdown",
+    "version": "1.0.0",
+    "description": "Zero-dependency countdown / timer component",
+    "main": "dist/chillcountdown.js",
+    "module": "src/chillcountdown.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "countdown",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillcountdown"
+    }
+}

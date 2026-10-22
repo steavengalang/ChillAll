@@ -1,0 +1,20 @@
+{
+    "name": "chillclickoutside",
+    "version": "1.1.0",
+    "description": "Zero-dependency click outside detection utility",
+    "main": "dist/chillclickoutside.js",
+    "module": "src/chillclickoutside.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "click",
+        "outside",
+        "detect",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

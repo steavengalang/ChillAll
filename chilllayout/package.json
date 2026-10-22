@@ -1,0 +1,21 @@
+{
+    "name": "chilllayout",
+    "version": "1.1.0",
+    "description": "Zero-dependency layout component",
+    "main": "dist/chilllayout.js",
+    "module": "src/chilllayout.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "layout",
+        "grid",
+        "flex",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

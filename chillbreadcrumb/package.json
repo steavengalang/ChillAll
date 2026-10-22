@@ -1,0 +1,20 @@
+{
+    "name": "chillbreadcrumb",
+    "version": "1.1.0",
+    "description": "Zero-dependency breadcrumb navigation component",
+    "main": "dist/chillbreadcrumb.js",
+    "module": "src/chillbreadcrumb.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "breadcrumb",
+        "navigation",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

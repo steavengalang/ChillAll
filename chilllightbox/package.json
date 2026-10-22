@@ -1,0 +1,27 @@
+{
+    "name": "chilllightbox",
+    "version": "1.0.0",
+    "description": "Zero-dependency image gallery lightbox with zoom, pan, swipe, thumbnails and captions",
+    "main": "dist/chilllightbox.js",
+    "module": "src/chilllightbox.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "lightbox",
+        "gallery",
+        "image",
+        "zoom",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilllightbox"
+    }
+}

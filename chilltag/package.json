@@ -1,0 +1,21 @@
+{
+    "name": "chilltag",
+    "version": "1.0.0",
+    "description": "Zero-dependency tag/chip component",
+    "main": "dist/chilltag.js",
+    "module": "src/chilltag.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "tag",
+        "chip",
+        "label",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

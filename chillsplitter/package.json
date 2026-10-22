@@ -1,0 +1,27 @@
+{
+    "name": "chillsplitter",
+    "version": "1.0.0",
+    "description": "Resizable split panes with keyboard-accessible separators",
+    "main": "dist/chillsplitter.js",
+    "module": "src/chillsplitter.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "splitter",
+        "split",
+        "resizable",
+        "panes",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillsplitter"
+    }
+}

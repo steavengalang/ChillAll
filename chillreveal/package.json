@@ -1,0 +1,26 @@
+{
+    "name": "chillreveal",
+    "version": "1.0.0",
+    "description": "Scroll-reveal animations (fade, slide, zoom, stagger)",
+    "main": "dist/chillreveal.js",
+    "module": "src/chillreveal.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "reveal",
+        "scroll",
+        "animation",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillreveal"
+    }
+}

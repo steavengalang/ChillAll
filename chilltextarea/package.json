@@ -1,0 +1,20 @@
+{
+    "name": "chilltextarea",
+    "version": "1.0.0",
+    "description": "Zero-dependency textarea component with auto-resize",
+    "main": "dist/chilltextarea.js",
+    "module": "src/chilltextarea.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "textarea",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

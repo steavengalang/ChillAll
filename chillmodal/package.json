@@ -1,0 +1,30 @@
+{
+    "name": "chillmodal",
+    "version": "1.0.0",
+    "description": "Zero-dependency modal library with focus trap, ESC key support, and dark/light mode. Framework-agnostic.",
+    "main": "dist/chillmodal.js",
+    "module": "src/chillmodal.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "modal",
+        "dialog",
+        "popup",
+        "confirm",
+        "alert",
+        "vanilla-js",
+        "zero-dependency",
+        "dark-mode",
+        "framework-agnostic"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode-tech/chillmodal"
+    },
+    "homepage": "https://chillcode.tech"
+}

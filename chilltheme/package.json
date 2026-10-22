@@ -1,0 +1,21 @@
+{
+    "name": "chilltheme",
+    "version": "1.1.0",
+    "description": "Zero-dependency theme management utility",
+    "main": "dist/chilltheme.js",
+    "module": "src/chilltheme.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "theme",
+        "dark",
+        "light",
+        "mode",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

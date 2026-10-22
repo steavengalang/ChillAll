@@ -1,0 +1,30 @@
+{
+    "name": "chilldate",
+    "version": "1.0.0",
+    "description": "Zero-dependency date picker with calendar view and dark/light mode support. Framework-agnostic.",
+    "main": "dist/chilldate.js",
+    "module": "src/chilldate.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "datepicker",
+        "date-picker",
+        "calendar",
+        "date",
+        "picker",
+        "vanilla-js",
+        "zero-dependency",
+        "dark-mode",
+        "framework-agnostic"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode-tech/chilldate"
+    },
+    "homepage": "https://chillcode.tech"
+}

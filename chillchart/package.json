@@ -1,0 +1,32 @@
+{
+    "name": "chillchart",
+    "version": "1.0.0",
+    "description": "Zero-dependency chart library with line, bar, pie, and doughnut charts. Framework-agnostic with dark/light mode support.",
+    "main": "dist/chillchart.js",
+    "module": "src/chillchart.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "chart",
+        "charts",
+        "graph",
+        "visualization",
+        "line-chart",
+        "bar-chart",
+        "pie-chart",
+        "vanilla-js",
+        "zero-dependency",
+        "dark-mode",
+        "framework-agnostic"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode-tech/chillchart"
+    },
+    "homepage": "https://chillcode.tech"
+}

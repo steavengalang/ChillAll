@@ -1,0 +1,26 @@
+{
+    "name": "chillmasonry",
+    "version": "1.0.0",
+    "description": "Responsive masonry / grid layout",
+    "main": "dist/chillmasonry.js",
+    "module": "src/chillmasonry.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "masonry",
+        "grid",
+        "layout",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillmasonry"
+    }
+}

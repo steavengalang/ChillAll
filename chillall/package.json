@@ -1,0 +1,63 @@
+{
+    "name": "chillall",
+    "version": "2.0.0",
+    "description": "ChillLib complete bundle - every ChillLib UI component (alerts, tables, forms, charts, modals, nav, data tools, utilities) in ONE zero-dependency package",
+    "main": "dist/chillall.cjs",
+    "module": "dist/chillall.esm.js",
+    "browser": "dist/chillall.js",
+    "types": "dist/chillall.d.ts",
+    "unpkg": "dist/chillall.min.js",
+    "jsdelivr": "dist/chillall.min.js",
+    "exports": {
+        ".": {
+            "types": "./dist/chillall.d.ts",
+            "import": "./dist/chillall.esm.js",
+            "require": "./dist/chillall.cjs",
+            "default": "./dist/chillall.js"
+        },
+        "./min": "./dist/chillall.min.js",
+        "./package.json": "./package.json"
+    },
+    "sideEffects": false,
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "node ../tools/build.js",
+        "prepublishOnly": "node ../tools/build.js",
+        "test": "node --test --test-force-exit ../tools/tests/*.test.js"
+    },
+    "keywords": [
+        "chillall",
+        "chillcode",
+        "ui",
+        "components",
+        "bundle",
+        "alert",
+        "table",
+        "chart",
+        "modal",
+        "toast",
+        "datepicker",
+        "vanilla-js",
+        "framework-agnostic",
+        "zero-dependency",
+        "react",
+        "vue",
+        "nextjs"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/steavengalang/ChillAll.git",
+        "directory": "chillall"
+    },
+    "dependencies": {},
+    "bugs": {
+        "url": "https://github.com/steavengalang/ChillAll/issues"
+    },
+    "homepage": "https://github.com/steavengalang/ChillAll#readme"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "chillfullscreen",
+    "version": "1.0.0",
+    "description": "Fullscreen API wrapper with toggle button helper",
+    "main": "dist/chillfullscreen.js",
+    "module": "src/chillfullscreen.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "fullscreen",
+        "api",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillfullscreen"
+    }
+}

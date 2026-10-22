@@ -1,0 +1,21 @@
+{
+    "name": "chillsearch",
+    "version": "1.0.0",
+    "description": "Zero-dependency search input component",
+    "main": "dist/chillsearch.js",
+    "module": "src/chillsearch.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "search",
+        "input",
+        "filter",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

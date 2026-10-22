@@ -1,0 +1,26 @@
+{
+    "name": "chillscrollspy",
+    "version": "1.0.0",
+    "description": "Scroll-spy table of contents with active link highlighting",
+    "main": "dist/chillscrollspy.js",
+    "module": "src/chillscrollspy.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "scrollspy",
+        "toc",
+        "navigation",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillscrollspy"
+    }
+}

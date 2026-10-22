@@ -1,0 +1,21 @@
+{
+    "name": "chillavatar",
+    "version": "1.0.0",
+    "description": "Zero-dependency avatar component",
+    "main": "dist/chillavatar.js",
+    "module": "src/chillavatar.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "avatar",
+        "user",
+        "image",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "chillconfig",
+    "version": "1.1.0",
+    "description": "Zero-dependency configuration utility with persistence",
+    "main": "dist/chillconfig.js",
+    "module": "src/chillconfig.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "config",
+        "settings",
+        "storage",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

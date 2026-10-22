@@ -1,0 +1,26 @@
+{
+    "name": "chillstorage",
+    "version": "1.0.0",
+    "description": "Safe typed storage wrapper with TTL, namespaces and cross-tab subscribe",
+    "main": "dist/chillstorage.js",
+    "module": "src/chillstorage.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "storage",
+        "localstorage",
+        "ttl",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillstorage"
+    }
+}

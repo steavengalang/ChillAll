@@ -1,0 +1,21 @@
+{
+    "name": "chillfocustrap",
+    "version": "1.1.0",
+    "description": "Zero-dependency focus trap utility for modals",
+    "main": "dist/chillfocustrap.js",
+    "module": "src/chillfocustrap.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "focus",
+        "trap",
+        "modal",
+        "accessibility",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

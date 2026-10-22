@@ -1,0 +1,20 @@
+{
+    "name": "chillpagination",
+    "version": "1.0.0",
+    "description": "Zero-dependency pagination component",
+    "main": "dist/chillpagination.js",
+    "module": "src/chillpagination.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "pagination",
+        "pager",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

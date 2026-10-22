@@ -1,0 +1,20 @@
+{
+    "name": "chillportal",
+    "version": "1.1.0",
+    "description": "Zero-dependency portal utility for rendering outside DOM hierarchy",
+    "main": "dist/chillportal.js",
+    "module": "src/chillportal.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "portal",
+        "modal",
+        "overlay",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

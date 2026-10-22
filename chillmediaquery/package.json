@@ -1,0 +1,20 @@
+{
+    "name": "chillmediaquery",
+    "version": "1.1.0",
+    "description": "Zero-dependency media query utility",
+    "main": "dist/chillmediaquery.js",
+    "module": "src/chillmediaquery.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "media",
+        "query",
+        "responsive",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

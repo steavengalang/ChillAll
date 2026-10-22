@@ -1,0 +1,26 @@
+{
+    "name": "chillkbd",
+    "version": "1.0.0",
+    "description": "Styled keyboard-key chips with OS-aware symbols",
+    "main": "dist/chillkbd.js",
+    "module": "src/chillkbd.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "kbd",
+        "keyboard",
+        "shortcut",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillkbd"
+    }
+}

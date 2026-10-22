@@ -1,0 +1,24 @@
+{
+    "name": "chilltaginput",
+    "version": "1.0.0",
+    "description": "Zero-dependency tag / chip input",
+    "main": "dist/chilltaginput.js",
+    "module": "src/chilltaginput.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "taginput",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilltaginput"
+    }
+}

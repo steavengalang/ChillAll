@@ -1,0 +1,27 @@
+{
+    "name": "chillbacktotop",
+    "version": "1.0.0",
+    "description": "Zero-dependency floating back-to-top button with scroll progress ring",
+    "main": "dist/chillbacktotop.js",
+    "module": "src/chillbacktotop.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "backtotop",
+        "scroll",
+        "button",
+        "progress",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillbacktotop"
+    }
+}

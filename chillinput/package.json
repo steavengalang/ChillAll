@@ -1,0 +1,25 @@
+{
+    "name": "chillinput",
+    "version": "1.0.0",
+    "description": "Zero-dependency input component with validation states",
+    "main": "dist/chillinput.js",
+    "module": "src/chillinput.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "input",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillinput"
+    }
+}

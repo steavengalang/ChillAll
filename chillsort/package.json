@@ -1,0 +1,21 @@
+{
+    "name": "chillsort",
+    "version": "1.0.0",
+    "description": "Zero-dependency sort component",
+    "main": "dist/chillsort.js",
+    "module": "src/chillsort.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "sort",
+        "order",
+        "data",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

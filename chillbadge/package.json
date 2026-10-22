@@ -1,0 +1,21 @@
+{
+    "name": "chillbadge",
+    "version": "1.0.0",
+    "description": "Zero-dependency badge component",
+    "main": "dist/chillbadge.js",
+    "module": "src/chillbadge.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "badge",
+        "tag",
+        "label",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

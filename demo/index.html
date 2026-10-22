@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChillAlert v1.1.0 - Demo</title>
+  <script src="../dist/chillalert.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-secondary: #171717;
+      --bg-card: rgba(255,255,255,0.03);
+      --text: #fafafa;
+      --text-secondary: #a3a3a3;
+      --border: #262626;
+      --primary: #22c55e;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    
+    header { text-align: center; margin-bottom: 60px; }
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #22c55e, #3b82f6);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .subtitle { color: var(--text-secondary); font-size: 18px; margin-bottom: 24px; }
+    
+    .badges { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .badge {
+      padding: 6px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .badge-new { background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.3); color: var(--primary); }
+    
+    .selector-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 40px;
+    }
+    
+    .selector-title { font-size: 20px; font-weight: 600; margin-bottom: 24px; text-align: center; }
+    
+    .selector-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    
+    .selector-group h3 {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+    }
+    
+    .selector-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    
+    .selector-btn {
+      padding: 10px 16px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    
+    .selector-btn:hover { border-color: var(--primary); }
+    .selector-btn.active { background: rgba(34,197,94,0.15); border-color: var(--primary); color: var(--primary); }
+    
+    .code-section {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+    
+    .code-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .code-title { font-size: 14px; font-weight: 600; }
+    .code-combo { font-size: 12px; color: var(--primary); margin-left: 12px; }
+    
+    .copy-btn {
+      padding: 8px 16px;
+      background: var(--primary);
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    
+    .code-block { padding: 24px; overflow: auto; max-height: 400px; }
+    
+    .code-block pre {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      color: #e5e5e5;
+      white-space: pre;
+    }
+    
+    .demo-section { margin-bottom: 40px; }
+    .demo-title { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+    .demo-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    
+    .demo-btn {
+      padding: 14px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    
+    .demo-btn:hover { border-color: var(--primary); transform: translateY(-2px); }
+    
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    
+    footer a { color: var(--primary); text-decoration: none; }
+    
+    @media (max-width: 768px) {
+      .selector-grid { grid-template-columns: 1fr; }
+      .demo-grid { grid-template-columns: repeat(2, 1fr); }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ChillAlert</h1>
+      <p class="subtitle">A minimal, framework-agnostic alert library</p>
+      <div class="badges">
+        <span class="badge badge-new">v1.1.0</span>
+        <span class="badge">TypeScript Ready</span>
+        <span class="badge">Zero Dependencies</span>
+        <span class="badge">Framework Agnostic</span>
+      </div>
+    </header>
+    
+    <div class="selector-section">
+      <h2 class="selector-title">📦 Choose Your Stack</h2>
+      <div class="selector-grid">
+        <div class="selector-group">
+          <h3>Framework</h3>
+          <div class="selector-options" id="framework-options">
+            <button class="selector-btn active" data-value="react">React</button>
+            <button class="selector-btn" data-value="nextjs">Next.js</button>
+            <button class="selector-btn" data-value="vue">Vue</button>
+            <button class="selector-btn" data-value="vanilla">Vanilla JS</button>
+          </div>
+        </div>
+        <div class="selector-group">
+          <h3>Language</h3>
+          <div class="selector-options" id="language-options">
+            <button class="selector-btn active" data-value="typescript">TypeScript</button>
+            <button class="selector-btn" data-value="javascript">JavaScript</button>
+          </div>
+        </div>
+        <div class="selector-group">
+          <h3>Styling</h3>
+          <div class="selector-options" id="styling-options">
+            <button class="selector-btn active" data-value="tailwind">Tailwind</button>
+            <button class="selector-btn" data-value="css">Custom CSS</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="code-section">
+      <div class="code-header">
+        <div>
+          <span class="code-title">Installation & Usage</span>
+          <span class="code-combo" id="combo-label">React + TypeScript + Tailwind</span>
+        </div>
+        <button class="copy-btn" id="copy-btn">Copy Code</button>
+      </div>
+      <div class="code-block">
+        <pre id="code-output">Loading...</pre>
+      </div>
+    </div>
+    
+    <div class="demo-section">
+      <h2 class="demo-title">🎮 Live Demo</h2>
+      <div class="demo-grid">
+        <button class="demo-btn" id="demo-alert">Alert</button>
+        <button class="demo-btn" id="demo-confirm">Confirm</button>
+        <button class="demo-btn" id="demo-prompt">Prompt</button>
+        <button class="demo-btn" id="demo-toast">Toast</button>
+        <button class="demo-btn" id="demo-loading">Loading</button>
+      </div>
+    </div>
+    
+    <footer>
+      <p>ChillAlert v1.1.0 · MIT License · <a href="https://github.com/steavengalang/chillalert">GitHub</a> · <a href="https://npmjs.com/package/chillalert">NPM</a></p>
+    </footer>
+  </div>
+
+  <!-- Code templates (separate file) -->
+  <script src="code-templates.js"></script>
+  
+  <!-- Demo logic -->
+  <script src="demo.js"></script>
+</body>
+</html>

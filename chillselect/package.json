@@ -1,0 +1,21 @@
+{
+    "name": "chillselect",
+    "version": "1.0.0",
+    "description": "Zero-dependency select component with custom styling",
+    "main": "dist/chillselect.js",
+    "module": "src/chillselect.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "select",
+        "dropdown",
+        "form",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

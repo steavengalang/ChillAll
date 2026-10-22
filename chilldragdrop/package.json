@@ -1,0 +1,21 @@
+{
+    "name": "chilldragdrop",
+    "version": "1.0.0",
+    "description": "Zero-dependency drag and drop component",
+    "main": "dist/chilldragdrop.js",
+    "module": "src/chilldragdrop.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "drag",
+        "drop",
+        "sortable",
+        "ui",
+        "component",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

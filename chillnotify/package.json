@@ -1,0 +1,30 @@
+{
+    "name": "chillnotify",
+    "version": "1.0.0",
+    "description": "Zero-dependency notification/toast library with progress bar and dark/light mode support. Framework-agnostic.",
+    "main": "dist/chillnotify.js",
+    "module": "src/chillnotify.js",
+    "files": [
+        "dist",
+        "src",
+        "README.md"
+    ],
+    "keywords": [
+        "notification",
+        "toast",
+        "notify",
+        "snackbar",
+        "message",
+        "vanilla-js",
+        "zero-dependency",
+        "dark-mode",
+        "framework-agnostic"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode-tech/chillnotify"
+    },
+    "homepage": "https://chillcode.tech"
+}

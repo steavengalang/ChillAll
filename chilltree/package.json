@@ -1,0 +1,24 @@
+{
+    "name": "chilltree",
+    "version": "1.0.0",
+    "description": "Zero-dependency tree component",
+    "main": "dist/chilltree.js",
+    "module": "src/chilltree.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "tree",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilltree"
+    }
+}

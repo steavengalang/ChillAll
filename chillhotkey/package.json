@@ -1,0 +1,20 @@
+{
+    "name": "chillhotkey",
+    "version": "1.1.0",
+    "description": "Zero-dependency keyboard shortcut utility",
+    "main": "dist/chillhotkey.js",
+    "module": "src/chillhotkey.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "hotkey",
+        "keyboard",
+        "shortcut",
+        "utility",
+        "vanilla-js"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "chillanimate",
+    "version": "1.0.0",
+    "description": "Web Animations API helpers (fade, slide, shake, pulse, collapse)",
+    "main": "dist/chillanimate.js",
+    "module": "src/chillanimate.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "animation",
+        "waapi",
+        "transitions",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillanimate"
+    }
+}

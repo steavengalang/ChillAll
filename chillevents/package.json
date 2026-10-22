@@ -1,0 +1,26 @@
+{
+    "name": "chillevents",
+    "version": "1.0.0",
+    "description": "Tiny event emitter / pub-sub bus",
+    "main": "dist/chillevents.js",
+    "module": "src/chillevents.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "events",
+        "emitter",
+        "pubsub",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chillevents"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "chilldrawer",
+    "version": "1.0.0",
+    "description": "Zero-dependency side drawer / sheet with focus trap, swipe-to-close and stacking",
+    "main": "dist/chilldrawer.js",
+    "module": "src/chilldrawer.js",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "keywords": [
+        "drawer",
+        "sheet",
+        "sidebar",
+        "overlay",
+        "ui",
+        "component",
+        "vanilla-js",
+        "zero-dependency"
+    ],
+    "author": "ChillCode Tech",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chillcode/chilldrawer"
+    }
+}
